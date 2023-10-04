@@ -16,10 +16,15 @@ export class PropertyListComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this._housingService.getAll().subscribe( (data: Array<Iproperty>) => {
-        this.houseProperty = data;
-      }
-    );
+    // this._housingService.getAll().subscribe( (data: Array<Iproperty>) => {
+    //     this.houseProperty = data;
+    //   }
+    // );
+
+    this._housingService.getAll().subscribe( (data) => {
+      this.houseProperty = data;
+    }
+  );
   }
 
 }
