@@ -1,5 +1,5 @@
 export class Property {
-    Id? : number;
+    Id : number;
     Name : string;
     Type : string;
     Price : number; 

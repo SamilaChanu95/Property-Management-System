@@ -11,11 +11,13 @@ import { Property } from "../models/property";
 export class PropertyCardComponent implements OnInit {
     // @Input() hProperty: Property = new Property();
     @Input() hProperty: Property = new Property();
+    propertyId: number = 0;
 
     constructor() {}
 
     ngOnInit() : void {
-        console.log("instanceof ", typeof this.hProperty);
-        console.log("hProperty ", this.hProperty);
+        // this.propertyId = this.hProperty.Id;
+        console.log("propertyId ", this.propertyId);
+        // console.log("hProperty ", this.hProperty);
     }
 }
